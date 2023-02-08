@@ -32,5 +32,19 @@ console.log(roll_number.sort(function(a, b){
 }))
 
 
+// কোন একটা সাল lifeYear কিনা 
+    // ৪০০ দিয়ে ভাগ করলে ভাগশেষ থাকবে না 
+    // ৪ এর গুননিয়ক হবে 
+    function iseapYear(year){
+        if((year % 400 === 0) || ((year % 4 === 0) && (year % 100 !== 0)))
+        {
+            console.log(`${year} is a leap year`);
+        }else{
+            console.log(`${year} is not a leap year`)
+        }
+    }
+    iseapYear(2028)
+
+
 
 
