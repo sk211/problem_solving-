@@ -70,6 +70,46 @@ function getEvenNumbers(){
  }
  printMultiplicatoinTable(10)
 
+//  Create a length converter function 
+function converterLenth(value, fromUnit, toUnit){
+    const conversionFactors ={
+        cm: {
+            cm: 1,
+            m: 0.01,
+            in: 0.39,
+            ft: 0.0328084
+        },
+        m: {
+            cm: 100,
+            m: 1,
+            in: 39.3701 ,
+            ft: 3.28084
+        },
+        in :{
+            cm: 2.54,
+            m:0.0254,
+            in:1,
+            ft:0.0833333
+        },
+        ft :{
+            cm: 30.48,
+            m:0.0254,
+            in:12,
+            ft:1
+        },
+
+    }
+    return value * conversionFactors[fromUnit][toUnit]
+}
+console.log(converterLenth(10, "m", "ft"))
+console.log(converterLenth(10, "ft", "m"))
+
+function sumArray(arr){
+    return arr.reduce((acc, currentValue)=>acc+currentValue,0)
+}
+
+console.log(sumArray([4,5,4]))
+
 
 
 
