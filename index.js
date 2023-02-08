@@ -45,6 +45,32 @@ console.log(roll_number.sort(function(a, b){
     }
     iseapYear(2028)
 
+// problem 3 
+// print 0-10 even number 
+function getEvenNumbers(){
+    const evenNums= [];
+    for(let i=0; i<=10; i++){
+        if(i % 2 === 0){
+            evenNums.push(i)
+        }
+    }
+    return evenNums;
+}
+ console.log(getEvenNumbers())
+
+ function printMultiplicatoinTable(n){
+    let result = ''
+    for(let i= 1 ; i<=n ; i++){
+        for(let j =1; j <=n; j++){
+            result += (i*j)+ '\t'
+        }
+        result += '\n'
+    }
+    console.log(result)
+ }
+ printMultiplicatoinTable(10)
+
+
 
 
 
