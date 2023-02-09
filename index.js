@@ -160,5 +160,10 @@ function sortArrayDcending(arr) {
 console.log(sortArrayDcending([9,-1,-3,-5,-6,-7,8,9,1,2,3,4]));
 
 
+// Remove the spaces found in a string 
 
+function removeSpaces(str){
+    return str.replace(/\s/g)
+}
+console.log(removeSpaces("sujan chandra majumder"))
 
