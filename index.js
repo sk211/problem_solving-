@@ -140,6 +140,25 @@ function reverseArr(){
 
 console.log(rA([2,4,6,8,10]))
 
+// Problem 8 
+
+// Array sort Acciding and desinding 
+
+
+function sortArrayAscending(arr) {
+    return arr.sort((a, b) => a - b);
+  }
+  
+
+console.log(sortArrayAscending([9,-1,-3,-5,-6,-7,8,9,1,2,3,4]));
+
+function sortArrayDcending(arr) {
+    return arr.sort((a, b) => a + b);
+  }
+  
+
+console.log(sortArrayDcending([9,-1,-3,-5,-6,-7,8,9,1,2,3,4]));
+
 
 
 
