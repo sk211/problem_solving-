@@ -25,12 +25,15 @@ const getAlphabet=()=>{
 
 const roll_number =  [3,5,6,8,9,6,4,3,4,56,33,4,5,6,78]
 
-// Array.sort  srtink কে ক্রমানয়ে সাজায় 
+
+// problem 3 
+// Array.sort  Array  কে ক্রমানয়ে সাজায় 
 
 console.log(roll_number.sort(function(a, b){
     return a-b
 }))
 
+// problem 4 
 
 // কোন একটা সাল lifeYear কিনা 
     // ৪০০ দিয়ে ভাগ করলে ভাগশেষ থাকবে না 
@@ -45,7 +48,7 @@ console.log(roll_number.sort(function(a, b){
     }
     iseapYear(2028)
 
-// problem 3 
+// problem 5
 // print 0-10 even number 
 function getEvenNumbers(){
     const evenNums= [];
@@ -69,6 +72,8 @@ function getEvenNumbers(){
     console.log(result)
  }
  printMultiplicatoinTable(10)
+
+//  problem 6 
 
 //  Create a length converter function 
 function converterLenth(value, fromUnit, toUnit){
@@ -108,8 +113,32 @@ function sumArray(arr){
     return arr.reduce((acc, currentValue)=>acc+currentValue,0)
 }
 
-console.log(sumArray([4,5,4]))
+console.log(sumArray([10,10,10]))
 
+// problem 7 
+
+function reverseArray(arr){
+    return arr.reverse()
+}
+
+console.log(reverseArray([1,3,4,5,7,8]))
+
+function rA(arr){
+return arr.reverse();
+}
+console.log(rA([9,8,7,6,5,4,3,2]))
+
+
+// formula 2
+function reverseArr(){
+    let newArr = [];
+    for(let i =arr.length -1; i>=0; i--){
+        newArr.push(arr[i])
+    }
+    return newArr
+}
+
+console.log(rA([2,4,6,8,10]))
 
 
 
