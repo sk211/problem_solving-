@@ -167,3 +167,40 @@ function removeSpaces(str){
 }
 console.log(removeSpaces("sujan chandra majumder"))
 
+// problem 9 
+function isDivisibleBy10(number){
+    return number % 10 ===0;
+}
+console.log(isDivisibleBy10(10))
+console.log(isDivisibleBy10(5));
+
+
+// problem 10 
+function countVowels(str){
+    let vowels = "aeiouAUIOU"
+    let count =0 ;
+    for(let i= 0; i< str.length; i++){
+        if(vowels.includes(str[i])){
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(countVowels("sujan majumder"))
+console.log(countVowels("hello"))
+
+// problem 11 
+// FizzBuzz: Write a program that prints the numbers from 1 to 100. For multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers that are multiples of both 3 and 5, print "FizzBuzz".
+
+for(let i =1; i<= 100; i++){
+    if(i % 3 ===0 && i % 5 === 0){
+        console.log("FizzBuzz")
+    } else if(i % 3 ===0){
+        console.log("Fizz")
+    }else if(i %5 ===0){
+        console.log("Buzz")
+    }else{
+        console.log(i)
+    }
+}
