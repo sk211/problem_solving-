@@ -204,3 +204,33 @@ for(let i =1; i<= 100; i++){
         console.log(i)
     }
 }
+// problem 12 
+  // Removing duplicates from an array
+//   function removeDuplicates(arr){
+//     return [...new Set(arr)]
+//   }
+//   console.log(removeDuplicates(["sujan", "akbor", "tanvir", "rakib", "Shakib","sujan", "sujan"]))
+
+//   formula 2 
+
+function removeDuplicates(arr){
+    return arr.filter((item, index)=>arr.indexOf(item) === index);
+}
+
+
+console.log(removeDuplicates(["sujan", "akbor", "tanvir", "rakib", "Shakib","sujan", "sujan"]))
+
+// problem 12 
+    // problem : Reverse a string: Write a function to reverse a string in JavaScript
+
+    function reverseString(str){
+        return str.split(' ').reverse().join();
+    }
+
+    console.log(reverseString("sujan chandra majumder"))
+    
+    function reverseString2(str){
+        return str.split(' ').reverse().join(' ')
+    }
+
+    console.log(reverseString2("amar sonar banlg ami tumai valobasi amar sonar bnalg "))
