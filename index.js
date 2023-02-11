@@ -261,3 +261,26 @@ console.log(removeDuplicates(["sujan", "akbor", "tanvir", "rakib", "Shakib","suj
     }
     console.log(factorial(5))
     console.log(factorial(3))
+
+    // problem 15 
+    // Finding the missing number: Given an array of numbers from 1 to N, where one number is missing, write a function to find the missing number.
+    function findMissingNumber(arr){
+        let n = arr.lenght +1;
+        let expetedSum = n * (n+1)/ 2;
+        let actualSum = arr.reduce((acc, vlu)=>acc+vlu, 0);
+        return expetedSum -actualSum
+    
+
+    }
+    let numbers = [1, 2, 3, 5];
+    let missingNumber = findMissingNumber(numbers);
+console.log(missingNumber); 
+
+// problem 16 
+function isPalindrome(str){
+    let reversdStr = str.split('').reverse().join('')   ;
+    return str === reversdStr
+}
+let str = "racecar"
+let isStrpalindrome = isPalindrome(str)
+console.log(isStrpalindrome)
