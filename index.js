@@ -249,3 +249,15 @@ console.log(removeDuplicates(["sujan", "akbor", "tanvir", "rakib", "Shakib","suj
     let nestedAttary = [1, [2, [3, [4, 5]]]];
     let falttendArray = flattenArray(nestedAttary);
     console.log(falttendArray)
+
+    // problem 14 
+    // Factorial: Write a program that calculates the factorial of a given number
+    function factorial(n){
+        let result = 1;
+        for(let i=1;i<= n; i++){
+            result *= i;
+        }
+        return result 
+    }
+    console.log(factorial(5))
+    console.log(factorial(3))
