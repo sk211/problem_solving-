@@ -234,3 +234,18 @@ console.log(removeDuplicates(["sujan", "akbor", "tanvir", "rakib", "Shakib","suj
     }
 
     console.log(reverseString2("amar sonar banlg ami tumai valobasi amar sonar bnalg "))
+
+    let originlSting = "hello";
+    let reverseString3 = reverseString(originlSting);
+    console.log(reverseString3)
+
+
+    // problem - 13
+    // Flattening an array: Write a function to flatten an array of arrays.
+
+    function flattenArray(arr){
+        return arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flattenArray(val) : val), []);
+    }
+    let nestedAttary = [1, [2, [3, [4, 5]]]];
+    let falttendArray = flattenArray(nestedAttary);
+    console.log(falttendArray)
